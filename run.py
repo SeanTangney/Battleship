@@ -53,8 +53,8 @@ SHOT = 0
 for guess in range(5):
     while True:
         try:
-            guess_row = int(input("\nGuess Row: "))
-            guess_col = int(input("\nGuess Column: "))
+            guess_row = int(input("\nGuess Row: \n"))
+            guess_col = int(input("\nGuess Column: \n"))
 
             if guess_row == ship_row and guess_col == ship_col:
                 print("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-")
