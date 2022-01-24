@@ -1,31 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleships Game
 
-Welcome SeanTangney,
+## How to play the game
+### In my version of Battleships:
+- A 5x5 game boards will be randomly generated with a hidden battleship on it.
+- The user is prompted for a row and a column which they can input their next guess.
+- After each guess the user is told the outcome whether thats a Hit marked by a which would mean they have won the game or a miss marked by 'X'. 
+- The goal is the hit the computers battleship before running out of tries.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Features
+- Play against the computer.
+- Randomly generated boards with battleship.
+- Accepts user input for the guesses.
+- Maintains number of incorrect guesses.
+- User input validation:
+    - Users can't enter co-ordiates that are not on the grid.
+    - Only numbers must be entered for guesses.
+    - Make sure the same guess hasnt been used already.
 
-## Reminders
+## Future Features:
+### Features i would like to implement into the game are
+- Take a name input from the user.
+- Allow the user the pick the size of the board
+- Allow the user and computer to have seperate boards
+- Allow different kinds of battleships spanning diferent sizes on the board.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## User Stories
+### First Time Visitor Goals
+- As a first time visitor, i want to eaesily understand the rules of the game and how to play it.
+- I want to get a clear understanding of the result of each round.
+- I want to see updated guess count at the end of every round.
+- I want to be made aware of any invalid guesses that I input.
+- I want to have fun playing the game.
 
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+### Frequent User Goals
+- I want to know there is no game-stopping bugs that prevent me from playing the game.
+- I want to have fun playing the game.
