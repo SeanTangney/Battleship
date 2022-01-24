@@ -85,6 +85,7 @@
     - Click on Deploy
 
 # Credits
+- Codeacademy tutorials to help me understand the process of coding this game.
 - My mentor for the continuous help and feedback.
 - Code Institute for the deployment terminal.
 
