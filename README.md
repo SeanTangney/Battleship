@@ -17,14 +17,37 @@
     - Only numbers must be entered for guesses.
     - Make sure the same guess hasnt been used already.
 
-## Future Features:
+# Game Screenshots
+## Rules and how to play
+![Rules](assets/images/rules.png)
+
+## User Input Prompt
+![User_Input](assets/images/user_input.png)
+
+## Updated Guess and Board
+![Updated_Board](assets/images/updated_guess_and_board.png)
+
+## Duplicate Guess
+![Duplicate_guess](assets/images/duplicate_guess.png)
+
+## Invalid Guess
+![Invalid_guess](assets/images/duplicate_guess.png)
+
+## You Lose
+![Game_Over](assets/images/game_over.png)
+
+## You Win
+![You Win](assets/images/you_win.png)
+
+
+# Future Features:
 ### Features i would like to implement into the game are
 - Take a name input from the user.
 - Allow the user the pick the size of the board
 - Allow the user and computer to have seperate boards
 - Allow different kinds of battleships spanning diferent sizes on the board.
 
-## User Stories
+# User Stories
 ### First Time Visitor Goals
 - As a first time visitor, i want to eaesily understand the rules of the game and how to play it.
 - I want to get a clear understanding of the result of each round.
@@ -43,7 +66,7 @@
 - Gave invalid inputs to the game such as strings and out of bounds inputs and duplicate inputs.
 - Tested in my local terminal and the Code Institute Heroku terminal.
 
-## Bugs
+# Bugs
 ### Solved Bugs
 - The guess number wasnt increasing for my after every invalid guess. I fixed this but adding the 1 outside of the print statement.
 ### Remaining Bugs

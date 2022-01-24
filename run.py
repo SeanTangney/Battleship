@@ -18,6 +18,7 @@ def print_board():
         print(" ".join(row))
 
 
+# Game Instructions
 print("\n-=-=-BATTLESHIP-=-=-\n")
 print("How to play:")
 print("* A battleship has been randomly placed on the board.")
@@ -42,9 +43,12 @@ def random_col():
     return randint(0, len(board))
 
 
+# Generate random row and col and assign it to variables
 ship_row = random_row()
 ship_col = random_col()
 
+
+# Validate users input to see if its a hit, miss or invalid input type
 SHOT = 0
 for guess in range(5):
     while True:
