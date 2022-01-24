@@ -10,7 +10,7 @@ for x in range(5):
     board.append([" O"] * 5)
 
 
-def print_board(board):
+def print_board():
     """
     Print out game board in the terminal
     """
@@ -25,29 +25,29 @@ print("* The objective is to target it with your coordinates to hit it.")
 print("* You have four tries to find it! ")
 print("* Previous missed attempts are displayed on the board with an X ")
 print("* Enter your coordinates (from 1-5) below\n  Best of Luck!!\n")
-print_board(board)
+print_board()
 
 
-def random_row(board):
+def random_row():
     """
     A function to generate a random row selection
     """
     return randint(0, len(board))
 
 
-def random_col(board):
+def random_col():
     """
     A function to generate a random column selection
     """
     return randint(0, len(board))
 
 
-ship_row = random_row(board)
-ship_col = random_col(board)
+ship_row = random_row()
+ship_col = random_col()
 
-shot = 0
+SHOT = 0
 for guess in range(5):
-    while(True):
+    while True:
         try:
             guess_row = int(input("\nGuess Row: "))
             guess_col = int(input("\nGuess Column: "))
@@ -67,22 +67,22 @@ for guess in range(5):
                     print("Your guess is outside the board")
                     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
 
-                elif(board[guess_row - 1][guess_col - 1] == " X"):
+                elif board[guess_row - 1][guess_col - 1] == " X":
                     print("You've already guessed that one!")
 
                 else:
                     print("\n-=-=-")
                     print("Miss!")
                     print("-=-=-\n")
-                    shot += 1
+                    SHOT += 1
                     board[guess_row - 1][guess_col - 1] = " X"
-                    print("Guess " + str(shot) + " out of 5.\n")
-                    print_board(board)
-                    if shot == 5:
+                    print("Guess " + str(SHOT) + " out of 5.\n")
+                    print_board()
+                    if SHOT == 5:
                         print("\n-=-=-=-=-=-=-=-=-=-=-")
                         print("\n     Game Over")
                         print("\nBetter Luck Next Time")
                         print("\n-=-=-=-=-=-=-=-=-=-=-")
                     break
-        except:
+        except Exception():
             print("Invalid entry")

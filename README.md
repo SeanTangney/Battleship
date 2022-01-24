@@ -35,3 +35,33 @@
 ### Frequent User Goals
 - I want to know there is no game-stopping bugs that prevent me from playing the game.
 - I want to have fun playing the game.
+
+# Testing
+## I have personally tested the project. Steps taken include:
+- I put the code through PEP8 linter and it confirmed that there are no problems.
+- Played the game several times.
+- Gave invalid inputs to the game such as strings and out of bounds inputs and duplicate inputs.
+- Tested in my local terminal and the Code Institute Heroku terminal.
+
+## Bugs
+### Solved Bugs
+- The guess number wasnt increasing for my after every invalid guess. I fixed this but adding the 1 outside of the print statement.
+### Remaining Bugs
+- There are no remaining bugs
+
+## Validator Testing
+- Pep8 was used
+    - No errors showed up in Pep8
+
+# Deployment 
+- Deployment Method
+    - Fork or clone this repository
+    - Create a new Heroku app
+    - Set the buildbacks to Python and NodeJS in that order
+    - Link the Heroku app to the repository
+    - Click on Deploy
+
+# Credits
+- My mentor for the continuous help and feedback.
+- Code Institute for the deployment terminal.
+
